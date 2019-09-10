@@ -1,0 +1,126 @@
+body {
+font-family: 'Open Sans', sans-serif;
+min-width: 320px;
+max-width: 1890px;
+padding: 0;
+margin: 0;
+}
+.container {
+	max-width: 1170px;
+	margin: 0 auto;
+}
+.top-block {
+	background-color: #1d2124;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-between;
+}
+.top-block-logo__img {
+	float: left;
+    margin: 19px;
+    width: max-content;
+    height: max-content;
+	background-color: #000;
+}
+.top-block-logo p {
+	padding-left: 72px;
+	line-height: 22px;
+	color: #fff;
+	font-size: 22px;
+	text-transform: uppercase;
+}
+.top-block-nav a{
+	color: #fff;
+	font-size: 15px;
+	text-transform: uppercase;
+	margin-right: 35px;
+	line-height: 68px;
+	text-decoration: none;
+}
+.top-block-nav a:visited {
+	color: #fff;
+}
+.top-block-search{
+	font-family: fontawesome !important;
+	font-size: 16px;
+	text-align: center;
+	line-height: 68px;
+    width: 68px;
+    height: 68px;
+	background-color: #000;
+	color: #fff;
+	cursor: pointer;
+    
+}
+.header-hero {
+	padding-top: 130px;
+	padding-bottom: 135px;
+	background-image: url(img/header-bg.jpeg);
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+.header-hero h1{
+	font-size: 27px;
+	color: #fff;
+	text-transform: uppercase;
+	text-align: center;
+}
+.header-hero-buttons {
+	width: 35%;
+	margin: 0 auto;
+	padding-top: 40px; 
+}
+.header-hero button{
+	width: 169px;
+	height: 68px;
+	text-align: center;
+	font-size: 18px;
+	margin: 10px;
+	font-weight: 600;
+	line-height: 68px;
+	border-radius: 5px;
+	color: #fff;
+	cursor: pointer;
+}
+.button-subscribe {
+	background-color: #89ca62;
+}
+.button-articles {
+	background-color: #14b9d5;
+}
+.popular-posts {
+background-color: #f2f2f2;
+}
+.popular-posts h2 {
+	padding: 60px 0 55px 0;
+	text-align: center;
+	color: #18b4cf;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0;
+}
+.popular-posts-block {
+	height: 910px;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.popular-posts-block__item {
+	width: 370px;
+	padding-bottom: 55px;
+}
+.popular-posts-block__item img {
+	width: 100%;
+	height: auto;
+	
+}
+.popular-posts-block__item p {
+	font-size: 18px;
+	font-weight: 700;
+	margin: 0;
+	color: #353a3d;
+	background-color: #fff;
+	text-align: center;
+	line-height: 60px;
+}
