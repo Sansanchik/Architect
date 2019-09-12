@@ -5,6 +5,9 @@ max-width: 1890px;
 padding: 0;
 margin: 0;
 }
+div {
+	margin:0;
+}
 .container {
 	max-width: 1170px;
 	margin: 0 auto;
@@ -167,33 +170,94 @@ background-color: #f2f2f2;
 	padding: 0;
 	display: grid;
     grid-template-columns: repeat(7, 1fr);
-    justify-items: center;
-	grid-gap: 0px;
+   	grid-gap: 0px;
 }
 .hot-news {
-	background-color: 
+	background-color: #fff;
 }
 .hot-news-list {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 2vw;
-  grid-template-areas:
-  "item1 item1 item1 item2"
-  "item4 item6 item12 item8"
-  "item9 item10 item1 item7"
+  grid-template-rows: repeat(4,1fr);
+  grid-template-columns: repeat(4,1fr);
+  grid-gap: 10px;
+  background-color: #fff;
 }
-.item1 {
-  grid-area: item1;
+.hot-news-list img {
+	width: 100%;
+	height: auto;
 }
-
-.item2 {
-  grid-area: item2;
+.hot-news-list h5{
+	text-align: center;
+	font-size: 18px;
+	margin: 0;
+	line-height: 50px;
 }
-.hot-news-list__item_imageleft img{
-	float: left;
+.hot-news-list p{
+	padding: 10px;
+	margin:0;
+	text-align: center;
+}
+.item11 {
+		 grid-row: 1;
+ grid-column: 1 / span 3;
+ display: flex;
+   height: fit-content;
+}
+.item11 img, .item42 img{
+	width: 50%;
+	height: fit-content;
+}
+.item12 {
+		 grid-row: 1;
+ grid-column: 4;
 }
 .hot-news-list__item_text {
 	background-color: #f9f7f7;
-	float: left;
+	
+}
+.item21 {
+	 grid-column: 1 / span 2;
+	 grid-row: 2;
+}
+.item22 {
+	 grid-column: 3 / span 2;
+	 grid-row: 2;
+}
+.item31 {
+	 grid-column: 1 / span 2;
+	 grid-row: 3;
+}
+.item32 {
+	 grid-column: 3 / span 2;
+	 grid-row: 3;
+}
+.item42 {
+ grid-column: 2 / span 3;
+ display: flex;
+  grid-row: 4;
+  height: fit-content;
+}
+.item41 {
+ grid-column: 1;
+  grid-row: 4;
+}
+footer {
+	margin-top: 60px;
+	  background-color: #1d2124;
+}
+.footer-wrap {
+	padding: 30px 0;
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+
+}
+.footer-copyright {
+	grid-column: 1;
+	text-align: left;
+	font-size: 13px;
+	color: #fff;
+}
+.footer-logo {
+	grid-column: 2;
+	margin-left: auto;
 }
